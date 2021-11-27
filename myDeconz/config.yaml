@@ -6,8 +6,6 @@ url: https://github.com/vianneyb/hassio-addon/tree/master/mydeconz
 apparmor: false
 arch:
   - amd64
-  - armhf
-  - aarch64
 backup_exclude:
   - "*/otau"
 devices:
@@ -16,7 +14,7 @@ discovery:
   - mydeconz
 gpio: true
 homeassistant: 0.91.2
-image: homeassistant/{arch}-addon-mydeconz
+image: "ghcr.io/vianneyb/{arch}-addon-mydeconz"
 ingress: true
 ingress_entry: ingress.html
 init: false
@@ -44,3 +42,6 @@ schema:
 startup: services
 udev: true
 usb: true
+
+
+
