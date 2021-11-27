@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.1.0
 slug: mydeconz
 name: mydeCONZ
 description: Control a Zigbee network with ConBee or RaspBee by Dresden Elektronik
@@ -13,7 +13,7 @@ backup_exclude:
 devices:
   - /dev/mem
 discovery:
-  - mydeconz
+  - deconz
 gpio: true
 homeassistant: 0.91.2
 image: "ghcr.io/vianneyb/{arch}-addon-mydeconz"
