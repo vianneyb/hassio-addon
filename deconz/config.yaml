@@ -1,8 +1,8 @@
-version: 1.1.0
-slug: mydeconz
-name: mydeCONZ
+version: 1.2.0
+slug: deconz
+name: deCONZ
 description: Control a Zigbee network with ConBee or RaspBee by Dresden Elektronik
-url: https://github.com/vianneyb/hassio-addon/tree/master/mydeconz
+url: https://github.com/vianneyb/hassio-addon/tree/master/deconz
 apparmor: false
 arch:
   - amd64
@@ -16,7 +16,7 @@ discovery:
   - deconz
 gpio: true
 homeassistant: 0.91.2
-image: "ghcr.io/vianneyb/{arch}-addon-mydeconz"
+image: "ghcr.io/vianneyb/{arch}-addon-deconz"
 ingress: true
 ingress_entry: ingress.html
 init: false
@@ -29,9 +29,9 @@ ports:
   5900/tcp: null
   8081/tcp: null
 ports_description:
-  40850/tcp: mydeCONZ API backend (Not required for Ingress)
-  5900/tcp: mydeCONZ via VNC (Not required for Ingress. Not secure!)
-  8081/tcp: mydeCONZ WebSocket (Not required for Ingress)
+  40850/tcp: deCONZ API backend (Not required for Ingress)
+  5900/tcp: deCONZ via VNC (Not required for Ingress. Not secure!)
+  8081/tcp: deCONZ WebSocket (Not required for Ingress)
 privileged:
   - SYS_RAWIO
 schema:
