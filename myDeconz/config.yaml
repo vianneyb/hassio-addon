@@ -6,6 +6,8 @@ url: https://github.com/vianneyb/hassio-addon/tree/master/mydeconz
 apparmor: false
 arch:
   - amd64
+  - armhf
+  - aarch64
 backup_exclude:
   - "*/otau"
 devices:
